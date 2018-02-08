@@ -104,8 +104,15 @@ section h3.section-subheading {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-@media (min-width: 768px) {
-  section {
+@media (max-width: 538px) {
+  .about-quote {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 428px) {
+  .about-quote {
+    font-size: 18px;
   }
 }
 
@@ -166,6 +173,20 @@ img::-moz-selection {
   background-color: #000;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+@media (max-width: 528px) {
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #000;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
 
 #mainNav .navbar-brand {
   color: #000;
@@ -259,11 +280,14 @@ header.masthead .intro-text .intro-heading {
     padding-top: 250px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
@@ -457,13 +481,12 @@ header.masthead .intro-text .intro-heading {
   .portrait {
     width: 40%;
     float: right;
-    padding-top: 130px;
+    padding-top: 100px;
   }
 
   .aboutMe {
     width: 60%;
   }
-
 }
 
 
@@ -734,7 +757,7 @@ section#contact :-ms-input-placeholder {
 }
 
 footer {
-  padding: 25px 0;
+  padding: 15px 0;
   text-align: center;
 }
 
